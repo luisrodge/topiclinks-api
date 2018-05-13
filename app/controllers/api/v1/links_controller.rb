@@ -29,7 +29,7 @@ class Api::V1::LinksController < ApplicationController
     private
 
     def link_params
-        params.require(:link).permit(:title, :url, :topic_id)
+        params.require(:link).permit(:title, :url, :topic_id, :link_title, :image, :description)
     end
 
     def set_topic
